@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<h1>Travel reservation form</h1>
+ <p><b>*denotes mandotory</b></p>
+ <form id="reg.form" method="POST">
+<label>Full Name*:</label>
+<br>
+<input type="text" name="full.name" placeholder="Firstname Lastname" autofocus="autofocus" value="">
+<br>
+<label>Email Address*:</label>
+<br>
+<input type="text" name="em.add" value="">
+<br>
+<label>Select tour Package*:</label>
+<br>
+<select name="package">
+<option value="Goa">Goa</option>
+</select>
+<br>
+<label>Arrival date*:</label>
+<br>
+<input type="text" name="arrival.dat" placeholder="m/d/y" value="">
+<br>
+<label>Number of persons*:</label>
+<br>
+<input type="text" name="num.persons" value="">
+<br>
+<label>What would you want to avail?*</label>
+<br>
+Boarding<input type="checkbox" name="facilities[]" value="boarding"><br>
+Fooding<input type="checkbox" name="facilities[]" value="fooding"> <br>
+Sight seeing <input type="checkbox" name="facilities[]" value="sightseeing"><br>
+<label>Discount coupon code:</label>
+<br>
+<input type="text" name="d.code" value="">
+<br>
+<label>Terms and Conditions*:</label>
+<br>
+<input type="radio" name="ter.con" value="agree" checked>I agree!
+<input type="radio" name="ter.con" value="disagree">I disagree!
+<br>
+<button type="submit" class="btn.lrg btn.prmy" name="submit">Complete Reservation</button>
+</form>
+</div>
+</body>
+</html>
